@@ -1,0 +1,118 @@
+.box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 0.5rem;
+}
+.box > header {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  position: relative;
+  font-size: 0.65rem;
+  border-bottom: 1px solid #f7f7f7;
+}
+.box > header > a {
+  text-decoration: none;
+}
+.box > header > a > img {
+  width: 0.45rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 0.65rem;
+  top: 0.4rem;
+}
+.box > nav {
+  width: 100%;
+  height: 2.1rem;
+}
+.box > nav > .nav {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+}
+.box > nav > .nav > .navbox {
+  flex: 1;
+  height: 2rem;
+  font-size: 0.55rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.box > section {
+  width: 100%;
+  height: auto;
+}
+.box > section > a .top{
+	overflow:hidden;
+	display:inline-block;
+  width: 100%;
+  height: 7.7rem;
+  background: url(../img/ca639e47f3281245fd13eedf5975558f025cbc6b1bf89-y260Sp_fw658.jpg) no-repeat;
+  background-size: cover;
+}
+.box > section >a .top .topbox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+.box > section >a .top .topbox .left {
+  width: 50%;
+  height: 100%;
+  flex: 1;
+}
+.box > section >a .top .topbox .left .leftbox {
+  padding-top: 3.4rem;
+  width: 100%;
+  height: 4.3rem;
+  color: #fff;
+}
+.box > section >a .top .topbox .left .leftbox > p {
+  width: 100%;
+  height: 1.85rem;
+  font-size: 0.9rem;
+  text-indent: 0.9rem;
+}
+.box > section >a .top .topbox .left .leftbox > .sx {
+  width: 100%;
+  height: 2.4rem;
+  text-indent: 0.9rem;
+}
+.box > section >a .top .topbox .left .leftbox > .sx > p {
+  width: 100%;
+  height: 0.9rem;
+  font-size: 0.5rem;
+}
+.box > section >a .top .topbox .right {
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+.box > section >a .top .topbox .right > .rightbox {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+}
+.box > section >a .top .topbox .right > .rightbox > .tp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 1.75rem;
+  color: #fff;
+  font-size: 0.5rem;
+}
+.box > section > a .top .topbox .right > .rightbox > .tp > img {
+  width: 0.55rem;
+  height: 0.55rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.15rem;
+}
+/*# sourceMappingURL=mmxapp3.css.map */

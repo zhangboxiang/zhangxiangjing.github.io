@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/mmxapp2.css"/>
+	</head>
+	<body>
+		<div class="box">
+		<header>
+		<div class="left">
+			<a href="javascript:;">
+			<img src="../img/zxt.png" alt="" /></a></div>	
+		<div class="center">注册</div>	
+		<div class="right"><img src="../img/duig.png" alt="" /></div>	
+		</header>	
+		<section>
+			<header>
+			    <header>
+			    	<div class="top">+</div>
+			    	<div class="img">
+			    <img src="../img/a6216758283be2f4e63eac12f12fc3826e0faa8930aaa-AhXftg_fw658.jpg"/>
+			    </div>
+			    
+			    
+			    </header>
+			<section>点击输入用户名</section>
+			</header>	
+			<section>
+			<div class="top">
+			<div class="iupbox">
+			<input type="text" name="" id="" value="" placeholder="手机号" />
+			<img src="../img/shub.png"/>
+			</div>
+			<div class="iupbox">
+			<input type="password" name="" id="" value="" placeholder="密码" />
+			<img src="../img/xiaos.png"/>
+			</div>
+			<div class="iupbox">
+			<input type="radio" name="sex" id="" value="" /> 男
+			<input type="radio" name="sex" id="" value="" /> 女
+			<img src="../img/xingb.png"/>
+			</div>
+			<div class="iupbox">
+			<input type="text" name="" id="" value="" placeholder="北京市大兴区" />
+			<img src="../img/xhdz.png"/>
+			</div>
+			<div class="iupbox">
+			<input type="text" name="" id="" value="" placeholder="1994年10月14日"/>
+			<img src="../img/liw.png"/>
+			</div>
+			</div>
+			<div class="bottom">
+			<button><a href="javascript:;">完&nbsp; &nbsp; &nbsp; &nbsp;成</a></button>
+			</div>
+			</section>
+			</section>
+			<footer>
+				已有账号?    &nbsp;&nbsp;&nbsp; <a href="../login.html">登录</a>
+			</footer>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>			
+		
+	</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/mmxapp3.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<a href="javascript:history.back(-1);"><img src="../img/lf.png" alt="" /></a>
+			赠送礼物
+			</header>
+			<nav>
+			<div class="nav">
+			<div class="navbox" style="color:#ec5252 ; border-bottom:2px solid #f5a8a8;">
+			鲜花
+			</div>
+			<div class="navbox">
+			美食
+			</div>
+			<div class="navbox">
+			饰品
+			</div>
+			<div class="navbox">
+			装备
+			</div>
+			</div>
+			</nav>
+			<section>
+			<a href="others.html">
+			<div class="top">
+			    <div class="topbox">
+			   <div class="left">
+			   <div class="leftbox">
+			  <p>粉玫瑰</p> 
+			  <div class="sx">
+			  <p>倾心，仰慕</p>
+			  <p>心动+10，魅力+10</p>
+			  </div>
+			   
+			   </div>
+			   </div>
+			   
+			   <div class="right">
+			    <div class="rightbox">
+			     <div class="tp">
+			     	<img src="../img/bsxd.png" alt="" />
+			         10
+			     </div>
+			    
+			    </div>
+			   </div>
+			    
+			    
+			    </div>
+			</div>
+			</a>
+			<a href="others.html">
+			<div class="top" style="margin-top:0.3rem;background: url(../img/bmg.jpg); background-size:cover;">
+			    <div class="topbox">
+			   <div class="left">
+			   <div class="leftbox">
+			  <p>白玫瑰</p> 
+			  <div class="sx">
+			  <p>花开四季香，人美愁断肠</p>
+			  <p>心动+10，魅力+10</p>
+			  </div>
+			   
+			   </div>
+			   </div>
+			   
+			   <div class="right">
+			    <div class="rightbox">
+			     <div class="tp">
+			     	<img src="../img/bsxd.png" alt="" />
+			         15
+			     </div>
+			    
+			    </div>
+			   </div>
+			    
+			    
+			    </div>
+			</div>
+			</a>
+			<a href="others.html">
+			<div class="top" style="margin-top:0.3rem;background: url(../img/6a4b7acb836d15805cdc9d7ffc549522f71a2e0831dfa-VeCipK_fw658.jpg); background-size:cover;">
+			    <div class="topbox">
+			   <div class="left">
+			   <div class="leftbox">
+			  <p>红玫瑰</p> 
+			  <div class="sx">
+			  <p>天长地久，仰三生三世</p>
+			  <p>心动+10，魅力+10</p>
+			  </div>
+			   
+			   </div>
+			   </div>
+			   
+			   <div class="right">
+			    <div class="rightbox">
+			     <div class="tp">
+			     	<img src="../img/bsxd.png" alt="" />
+			         20
+			     </div>
+			    
+			    </div>
+			   </div>
+			    
+			    
+			    </div>
+			</div>
+			</a>
+			</section>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>				
+		
+		
+		
+		
+		
+	</body>
+</html>

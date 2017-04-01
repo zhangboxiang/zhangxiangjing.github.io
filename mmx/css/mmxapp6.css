@@ -1,0 +1,226 @@
+body{
+	overflow: hidden;
+}
+
+.swipeleft{
+	transform: translateX(-25%);
+	-webkit-transform:translateX(-25%);
+}
+
+
+.zbox {
+  width: 50%;
+  height: 100vh;
+  background: url(../img/bgimg.jpg) no-repeat;
+  background-size: 100% 100vh;
+  float: left;
+  transition:all 0.5s;
+}
+.zbox > header {
+  width: 100%;
+  height: 6.7rem;
+}
+.zbox > header > .top {
+  width: 100%;
+  height: 3.4rem;
+}
+.zbox > header > .top > a > img {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-top: 1.35rem;
+  margin-left: 0.65rem;
+}
+.zbox > header > .bottom {
+  width: 100%;
+  height: 3.3rem;
+  display: flex;
+}
+.zbox > header > .bottom > .left {
+  flex: 3;
+  height: 3.3rem;
+}
+.zbox > header > .bottom > .left > a .img {
+  width: 2.6rem;
+  height: 2.6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 1.1rem;
+}
+.zbox > header > .bottom > .left > a .img > img {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.zbox > header > .bottom > .right {
+  flex: 7;
+  height: 3.3rem;
+}
+.zbox > header > .bottom > .right > .top {
+  width: 100%;
+  height: 1.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+.zbox > header > .bottom > .right > .top > img {
+  width: 0.6rem;
+  height: 0.55rem;
+}
+.zbox > header > .bottom > .right > .bottom {
+  width: 100%;
+  height: 0.8rem;
+  color: #fff;
+  font-size: 0.5rem;
+  line-height:0.8rem;
+}
+.zbox > section {
+  width: 100%;
+  height: 14.75rem;
+}
+.zbox > section > .center {
+  width: 100%;
+  height: 14rem;
+  padding-top: 0.75rem;
+}
+.zbox > section > .center > .xxbox:nth-child(1) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(1) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(1) > a > img {
+  width: 1.3rem;
+  height: 1rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(2) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(2) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(2) > a > img {
+  width: 1.1rem;
+  height: 0.9rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(3) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(3) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(3) > a > img {
+  width: 1.2rem;
+  height: 0.85rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(4) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(4) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(4) > a > img {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(5) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(5) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(5) > a > img {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(6) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(6) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(6) > a > img {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: -0.3rem;
+}
+.zbox > section > .center > .xxbox:nth-child(7) {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding-left: 20%;
+}
+.zbox > section > .center > .xxbox:nth-child(7) > a {
+  color: #fff;
+}
+.zbox > section > .center > .xxbox:nth-child(7) > a > img {
+  width: 1.1rem;
+  height: 1.15rem;
+  margin-top: -0.3rem;
+}
+.zbox > footer {
+	padding-top: 4rem;
+  width: 80%;
+  height: 2.5rem;
+ /* position: fixed;*/
+  display: flex;
+  /*bottom: 0;*/
+}
+.zbox > footer > .left {
+  flex: 1;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-top: 0.15rem;
+  color: #fff;
+}
+.zbox > footer > .left > a {
+  color: #fff;
+}
+.zbox > footer > .left > img {
+  width: 1rem;
+  height: 1rem;
+}
+.zbox > footer > .right {
+  flex: 1;
+  height: 2.5rem;
+  padding-right: 2.75rem;
+  padding-top: 0.15rem;
+  text-align: right;
+  color: #fff;
+}
+.zbox > footer > .right > a {
+  color: #fff;
+}
+.zbox > footer > .right > img {
+  width: 1rem;
+  height: 1rem;
+}
+/*# sourceMappingURL=mmxapp6.css.map */

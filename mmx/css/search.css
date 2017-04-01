@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑";
+  text-decoration: none;
+  outline: none;
+  font-weight: normal;
+}
+header {
+  width: 100%;
+  height: 9.4rem;
+  background: url(../img/bj-1.gif);
+  background-size: 100% 100%;
+}
+header .head {
+  width: 100%;
+  height: 1.8rem;
+}
+header .head .hed-left {
+  width: 0.85rem;
+  height: 0.75rem;
+  float: left;
+  background: url(../img/sou-1.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0.4rem;
+  margin-left: 0.7rem;
+}
+header .head .hed-ri {
+  width: 0.65rem;
+  height: 0.65rem;
+  float: right;
+  background: url(../img/sou-2.png) no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.65rem;
+  margin-top: 0.4rem;
+}
+
+
+a{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;}
+img{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+
+header .banner {
+  width: 100%;
+  height: 1.5rem;
+  margin-top: 0.7rem;
+}
+header .banner h1 {
+  font-size: 1.2rem;
+  float: left;
+  line-height: 1.5rem;
+  text-indent: 1.1rem;
+  color: #fff;
+  margin-right: 0.85rem;
+}
+header .banner span {
+  float: left;
+  line-height: 1.5rem;
+  color: #fff;
+  opacity: 0.3;
+}
+header .san-inputs {
+  width: 100%;
+  height: 1.45rem;
+  margin-top: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+header .san-inputs input {
+  width: 95%;
+  border-radius: 4px;
+  border: 0px;
+  height: 100%;
+  background: url(../img/input-2.gif) no-repeat;
+  background-size: 100% 100%;
+  text-indent: 1.75rem;
+  font-size: 0.55rem;
+}
+header .san-inputs .bu {
+  width: 0.85rem;
+  height: 0.9rem;
+  position: absolute;
+  right: 16%;
+  top: 0.4rem;
+}
+header .san-inputs .bu2 {
+  width: 0.85rem;
+  height: 0.9rem;
+  position: absolute;
+  right: 6%;
+  top: 0.4rem;
+}
+.san-com {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  border-bottom: 0.1rem solid #f3f3f3;
+}
+.san-com li {
+  -webkit-box-flex: 1;
+  height: 100%;
+  text-align: center;
+}
+.san-com li img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: 1.65rem;
+}
+.san-com li h2 {
+  font-size: 0.55rem;
+  font-weight: normal;
+}
+.san-foot {
+  width: 100%;
+  height: auto;
+}
+.san-foot li {
+  width: 100%;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  border-bottom: 0.1rem solid #f6f6f6;
+}
+.san-foot li img {
+  float: left;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-top: 0.4rem;
+  margin-left: 1.15rem;
+}
+.san-foot li h2 {
+  font-size: 0.5rem;
+  float: left;
+  text-indent: 0.65rem;
+  color: #575757;
+}
+.san-foot > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.55rem;
+  color: #959595;
+}
+/*# sourceMappingURL=search.css.map */

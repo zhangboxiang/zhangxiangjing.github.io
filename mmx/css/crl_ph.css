@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+.left {
+	float: left;
+	display: inline;
+}
+.right {
+	float: right;
+	display: inline;
+}
+.clear:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+.clear {
+	zoom: 1;
+}
+a{
+	text-decoration: none;
+}
+ol,ul{
+	list-style: none;
+}
+.rl_banner{
+	width: 100%;
+	height: 8.35rem;
+	background: url(../img/paihang/bj.gif) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.rl_top{
+	height: 1.6rem;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(103,95,92,0.11);
+}
+.rl_l img{
+	width: 0.9rem;
+	height: 0.75rem;
+	margin-top: 0.45rem;
+	margin-left: 0.6rem;
+}
+.rl_r img{
+	width: 1rem;
+	margin-right:0.6rem;
+	margin-top: 0.35rem;
+}
+.rl_pai{
+	margin-top: 2.8rem;
+	margin-left: 1.2rem;
+}
+.rl_pai p{
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.rl_pai p span{
+	color: #b3acaa;
+	font-weight: normal;
+}
+.rl_nav{
+	margin-top: 2.45rem;
+	margin-left: 0.2rem;
+	height: 1rem;
+}
+.rl_nav ul li{
+	width: 2.45rem;
+	text-align: center;
+	line-height: 1rem;
+	float: left;
+	font-size: 0.6rem;
+	margin-left: 1rem;
+}
+.rl_nav ul li a{
+	color: #fff;
+	display: block;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+.rl_boder{
+	border-bottom: 0.05rem #fff solid;
+}
+.classify{
+	height: 2.35rem;
+	margin-left: 0.15rem;
+}
+.classify ul li{
+	/*width: 2.45rem;*/
+	text-align: center;
+	line-height: 2.35rem;
+	float: left;
+	font-size: 0.45rem;
+	margin-left: 1.075rem;
+}
+.classify ul li a{
+	color: #c0c0c1;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+.classify .rl_red{
+	color: #ee6c6c;
+}
+.fy_list{
+	border-left: 0.15rem solid #e93434;
+	height: 3rem;
+   display: -webkit-box;
+   border-bottom:0.1rem solid #f5f5f5;
+}
+
+.fy_list > a{
+	display: block;
+	width:100%;
+	height:100%;
+	display: -webkit-box;
+}
+
+
+.list_lf{
+	width: 3.225rem;
+	text-align: center;
+}
+.list_con{
+	-webkit-box-flex: 1;
+	overflow: hidden;
+}
+.list_con h3{
+	margin-top: 0.725rem;
+	font-size: 0.5rem;
+	color: #1f1f26;
+}
+.list_con p{
+	margin-top: 0.25rem;
+}
+.list_con p span{
+	color: #cacacb;
+}
+.list_con p span:nth-child(2){
+	margin-left: 0.75rem;
+}.list_con p span:nth-child(3){
+	margin-left: 0.375rem;
+}
+.list_con img{
+	width: 0.65rem;
+}
+.list_lf img{
+	width: 1.75rem;
+	margin-top: 0.6rem;
+}
+.list_rg{
+	width: 3.5rem;
+	text-align: center;
+}
+.list_rg img{
+	width: 1rem;
+}
+.list_rg p{
+	font-size: 0.5rem;
+	color: #ee6a6a;
+	margin-top: 0.475rem;
+	text-align: center;
+}
+.listtow{
+	border-left: 0.15rem solid #ef6767 !important;
+}
+.rgtow img{
+	width: 0.825rem;
+}
+.rgtow p{
+	color: #f6aeae;
+}
+.rgtow p:nth-child(1){
+	margin-top: 0.7rem;
+}
+.listthree{
+	border-left: 0.15rem solid #f4a0a0 !important;
+}
+.rgthree img{
+	width: 0.675rem;
+}
+.rgthree p{
+	color: #f9cfcf;
+}
+.rgthree p:nth-child(1){
+	margin-top: 0.75rem;
+}
+.listsame{
+	border-left: 0.15rem solid #b4b4b4 !important;
+}
+.rgsame p{
+	color: #b4b4b4;
+	margin-top: 1.6rem;
+}
+.gap{
+	height: 2.15rem;
+}
+/*footer start*/
+.rl_footer{
+	width:100%;
+	height:2.15rem;
+	background: #fff;
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index:3;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+}
+.rl_footer div{
+	-webkit-box-flex:1;
+	text-align:center;
+}
+.rl_footer div img{
+	height:1rem;
+	margin:0.275rem 0 0.1rem;
+}
+.rl_footer div p{
+	font-size:0.525rem;
+	/*line-height: 0.5rem;*/
+	color:#9d9d9d;
+}
+.rl_footer div p.active{
+	color:#ef6868;
+}
+.active{
+	color: #e82c2c;
+}
+/*footer over*/
+
+.fy_big{
+	display: none;
+}
+.rl_ssph{
+	display:-webkit-box;
+	height: 5.325rem;
+	
+}
+.ssph_lf{
+	width:4.175rem ;
+}
+.ssph_lf img{
+	width:4.175rem ;
+	height: 5.325rem;
+}
+.ssph_ct{
+	-webkit-box-flex: 1;
+	margin-left: 0.575rem;
+}
+.ssph_ct h1{
+	font-size: 0.8rem;
+	color: #282828;
+	margin-top: 1.525rem;
+}
+.ssph_ct p{
+	font-size: 0.6rem;
+	color: #282828;
+	margin-top: 0.925rem;
+}
+.ssph_rg{
+	width: 3.5rem;
+}
+.ssph_rg p:first-child{
+	margin-top: 1.65rem;
+}
+.ssph_rg p img{
+	width: 0.675rem;
+}
+.ssph_rg p:nth-child(2){
+	margin-top: 1.06rem;
+}
+.ssph_rg p span{
+	color: #a1a1a1;
+	font-size: 0.6rem;
+	margin-left: 0.225rem;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="css/mmxapp1.css"/>
+	</head>
+	<body>
+		<!--<img src="img/b703182682413342426125950d5ebd232f0b4d2e1a4ba5-nYfCJM_fw658.png" alt="" />-->
+		<div class="box">
+		
+		
+
+		 <section>
+		 	<img src="img/ls.png"/>
+		<div class="dl">
+		<div class="top">	
+			<img src="img/yhtx.png"/>
+		<input type="text" name="" id="" value="" placeholder="请输入用户名或密码" />
+		</div>
+		<hr style="margin: 0;"/>
+		<div class="bottom">	
+			<img src="img/mima.png"/>
+		<input type="password" name="" id="" value="" placeholder="请输入密码" />
+		</div><button><a href="template/lights.html">登录</a></button>
+		</div>
+		
+		</section>
+		<footer>
+		<div class="top">
+			<div class="zx">
+				<a href="javascript:;"><img src="img/qq.png"/></a>
+		
+		<a href="javascript:;"><img src="img/zfb.png"/></a>
+		
+		<a href="javascript:;"><img src="img/wb.png"/></a>
+		
+		</div>
+		</div>
+		<div class="bottom">
+			<div class="left"><a href="template/register.html">注册</a></div>
+			<div class="right"><a href="template/register.html">忘记密码？</a></div>
+		</div>
+		</footer>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>		
+		
+		
+	</body>
+</html>

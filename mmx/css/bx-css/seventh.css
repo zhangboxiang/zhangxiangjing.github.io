@@ -1,0 +1,483 @@
+.bx_big{
+	width: 100%;
+	height: 27.45rem;
+}
+.bx_topp{
+	width: 100%;
+	height: 1.6rem;
+	background: white;
+}
+.bx_top{
+	width: 100%;
+	height: 1.6rem;
+	border-bottom: 0.1rem solid #f6f6f7;
+	position: fixed;
+	background: white;
+	top: 0;
+}
+.bx_left{
+	width: 20%;
+	height: 1.6rem;
+	float: left;
+}
+.bx_right{
+	width: 80%;
+	height: 1.6rem;
+	float: left;
+}
+.fa-angle-left{
+	font-size: 0.75rem;
+	color: #ea4242;
+	margin-left: 0.65rem;
+	margin-top: 0.5rem;
+}
+.bx_right h3{
+	color: #333333;
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+	text-indent: 3rem;
+}
+.bx_f{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+.bx_s{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+.bx_t{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+.bx_o{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+.bx_v{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+.bx_e{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom:0.1rem solid #f6f6f7;
+}
+
+.bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/19.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_bl>span{
+	float: left;
+}
+.bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_sui span{
+	float: left;
+}
+.bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+
+//
+.bx_s .bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_s .bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_s .bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_s .bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/20.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_s .bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_s .bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_s .bx_bl>span{
+	float: left;
+}
+.bx_s .bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_s .bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_s .bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_s .bx_sui span{
+	float: left;
+}
+.bx_s .bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+
+//
+.bx_t .bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_t .bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_t .bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_t .bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/21.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_t .bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_t .bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_t .bx_bl>span{
+	float: left;
+}
+.bx_t .bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_t .bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_t .bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_t .bx_sui span{
+	float: left;
+}
+.bx_t .bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+//
+.bx_o .bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_o .bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_o .bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_o .bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/22.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_o .bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_o .bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_o .bx_bl>span{
+	float: left;
+}
+.bx_o .bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_o .bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_o .bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_o .bx_sui span{
+	float: left;
+}
+.bx_o .bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+//
+.bx_v .bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_v .bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_v .bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_v .bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/23.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_v .bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_v .bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_v .bx_bl>span{
+	float: left;
+}
+.bx_v .bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_v .bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_v .bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_v .bx_sui span{
+	float: left;
+}
+.bx_v .bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+//
+.bx_e .bx_zuo{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_e .bx_zhong{
+	width: 60%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_e .bx_you{
+	width: 20%;
+	height: 3.75rem;
+	float: left;
+}
+.bx_e .bx_tu{
+	width: 2.55rem;
+	height: 2.55rem;
+	background: url(../../img/bx-img/24.gif) no-repeat;
+	background-size: cover;
+	margin-left: 0.65rem;
+	margin-top: 0.55rem;
+}
+.bx_e .bx_you h3{
+	font-size: 0.55rem;
+	color: #cacacc;
+	line-height: 3.75rem;
+}
+.bx_e .bx_bl{
+	margin-left: 0.8rem;
+	margin-top: 1rem;
+}
+.bx_e .bx_bl>span{
+	float: left;
+}
+.bx_e .bx_h{
+	width: 0.65rem;
+	height: 0.5rem;
+	background: url(../../img/bx-img/25.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_e .bx_r{
+	width: 0.75rem;
+	height: 0.6rem;
+	background: url(../../img/bx-img/26.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.25rem;
+}
+.bx_e .bx_sui{
+	float: left;
+	margin-top: 0.55rem;
+	margin-left: 0.8rem;
+}
+.bx_e .bx_sui span{
+	float: left;
+}
+.bx_e.bx_sui i{
+	width: 0.5rem;
+	height: 0.7rem;
+	background: url(../../img/bx-img/27.gif) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-left: 0.9rem;
+}
+.swipeleft{
+	transform:translateX(-15%);
+	-webkit-transform:translateX(-15%);
+	}

@@ -1,0 +1,156 @@
+body {
+  overflow: hidden;
+}
+.box {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/b703182682413342426125950d5ebd232f0b4d2e1a4ba5-nYfCJM_fw658.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.box section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.box section > img {
+  text-align: center;
+  width: 2.9rem;
+  height: 3.1rem;
+  position: absolute;
+  margin-top: 5rem;
+  left: 50%;
+  margin-left: -1.45rem;
+}
+.box section > .dl {
+  margin: 0 1rem 0 1rem;
+  height: 7.05rem;
+  padding-top: 10rem;
+}
+.box section > .dl > .top {
+  width: 100%;
+  height: 2.3rem;
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+}
+.box section > .dl > .top > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-indent: 2.15rem;
+  color: #ec5254;
+  font-size: 0.5rem;
+}
+.box section > .dl > .top > img {
+  width: 0.9rem;
+  height: 0.9rem;
+  top: 0.7rem;
+  left: 0.55rem;
+  position: absolute;
+}
+.box section > .dl > .bottom {
+  width: 100%;
+  height: 2.25rem;
+  position: relative;
+  border-bottom: 1px solid #de989b;
+}
+.box section > .dl > .bottom > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-indent: 2.15rem;
+  color: #ec5254;
+  font-size: 0.5rem;
+}
+.box section > .dl > .bottom > img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0.55rem;
+  top: 0.6rem;
+}
+.box section > .dl > button {
+  width: 100%;
+  height: 2.3rem;
+  background: #ec5254;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 2.3rem;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.box section > .dl > button > a {
+	display:inline-block;
+  color: #fff;
+  width:100%;
+  height:100%;
+}
+.box > footer {
+  width: 100%;
+  height: 6.35rem;
+}
+.box > footer > .top {
+  width: 100%;
+  height: 5rem;
+}
+.box > footer > .top > .zx {
+  width: 6rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.box > footer > .top > .zx > a:nth-child(1) > img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 1.75rem;
+}
+.box > footer > .top > .zx > a:nth-child(2) > img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 1.75rem;
+}
+.box > footer > .top > .zx > a:nth-child(3) > img {
+  width: 1.2rem;
+  height: 0.9rem;
+  position: absolute;
+  left: 4.4rem;
+  top: 1.75rem;
+}
+.box > footer .bottom {
+  width: 100%;
+  height: 1.35rem;
+  display: flex;
+}
+.box > footer .bottom > .left {
+  width: 50%;
+  height: 100%;
+  line-height: 1rem;
+  color: #fff;
+  text-indent: 1rem;
+}
+.box > footer .bottom > .left > a {
+  color: #fff;
+  text-decoration: none;
+}
+.box > footer .bottom > .right {
+  width: 50%;
+  height: 100%;
+  line-height: 1rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 1.1rem;
+}
+.box > footer .bottom > .right > a {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=mmxapp1.css.map */

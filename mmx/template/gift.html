@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/mmxapp4.css"/>
+		
+	</head>
+	<body>
+		
+		<div class="box">
+			
+			<header>
+				<div class="left">
+					<a href="javascript:history.back(-1);">
+					<img src="../img/bjt.png" alt="" /></a>
+				</div>
+				<div class="right">
+					<img src="../img/bsz.png" alt="" />
+				</div>
+				
+				
+			</header>
+			<section>
+				
+				<div class="top">
+					<img src="../img/64c930a27ee4d15137191d9d259c1669dace1dad173a1-4SCv2X_fw658.jpg" alt="" />
+				</div>
+				<div class="center">
+					<div class="top">
+						琉璃&nbsp;
+						<img src="../img/vip.png" alt="" />
+					</div>
+					<div class="bottom">
+						<p>22岁 &nbsp;&nbsp;&nbsp;&nbsp;北京东区 &nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/xhdz.png" alt="" />&nbsp;0.02km</p>
+						真诚的对待，真诚的交朋友...
+					</div>
+				</div>
+				<div class="centerx">
+				<div class="centerxbox">
+				<div class="boxxz">
+				<div class="yx">
+					<div class="khz"></div>
+				</div>
+				<p>礼物</p>
+				<p>180</p>
+				</div>
+				</div>
+				<div class="centerxbox">
+				<div class="boxxz">
+				<div class="yx" style="background: #ee8f6e;">
+					<div class="khz"></div>
+				</div>
+				<p>喜欢</p>
+				<p>64</p>
+				</div>
+				</div>
+				<div class="centerxbox">
+				<div class="boxxz">
+				<div class="yx" style="background: #d3315e;">
+					<div class="khz"></div>
+				</div>
+				<p>想买</p>
+				<p>21</p>
+				</div>
+				</div>
+				
+				
+				</div>
+				<div class="bottom">
+				 <div class="dqq">
+				  <div class="xtk">
+				    <img src="../img/btp.png" alt="" />
+				  </div>
+                  <p>265</p>   
+				   <p>相册</p>
+				 </div>
+				
+				
+				</div>
+			</section>
+			<!--<div class="footerbox"></div>-->
+			<footer>
+			<div class="top">
+			个性标签
+			</div>
+			<div class="bottom">
+			<a href="javascrpit:;"><img src="../img/hjt.png" alt="" /></a>
+			<a href="javascrpit:;"><div class="afk">天枰座</div></a>
+			<a href="javascrpit:;"><div class="afk">动漫</div></a>
+			<a href="javascrpit:;"><div class="afk">爱猫</div></a>
+			<a href="javascrpit:;"><div class="afk">170cm</div></a>
+			<a href="javascrpit:;"><div class="axfk">+</div></a>
+			<a href="javascrpit:;"><img src="../img/yjt.png"/></a>
+			</div>
+			</footer>
+		</div>
+		
+		
+		
+		
+	<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>				
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

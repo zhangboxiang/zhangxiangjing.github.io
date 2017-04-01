@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/friend.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="../js/friend.js" ></script>
+		<script>
+			(function(win) {
+				var ratio, scaleValue, renderTime,
+					document = window.document,
+					docElem = document.documentElement,
+					vpm = document.querySelector('meta[name="viewport"]');
+				if(vpm) {
+					var tempArray = vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+					if(tempArray) {
+						scaleValue = parseFloat(tempArray[2]);
+						ratio = parseInt(1 / scaleValue);
+					}
+				} else {
+					vpm = document.createElement("meta");
+					vpm.setAttribute("name", "viewport");
+					vpm.setAttribute("content", "width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+					docElem.firstElementChild.appendChild(vpm);
+				}
+
+				win.addEventListener("resize", function() {
+					clearTimeout(renderTime);
+					renderTime = setTimeout(initPage, 300);
+				}, false);
+
+				win.addEventListener("pageshow", function(e) {
+					e.persisted && (clearTimeout(renderTime), renderTime = setTimeout(initPage, 300));
+				}, false);
+
+				"complete" === document.readyState ? document.body.style.fontSize = 12 * ratio + "px" :
+					document.addEventListener("DOMContentLoaded", function() {
+						document.body.style.fontSize = 12 * ratio + "px";
+					}, false);
+				initPage();
+
+				function initPage() {
+					var htmlWidth = docElem.getBoundingClientRect().width;
+					if(htmlWidth > 640) htmlWidth = 640;
+					htmlWidth / ratio > 640 && (htmlWidth = 640 * ratio);
+					win.rem = htmlWidth / 16;
+					docElem.style.fontSize = win.rem + "px";
+				}
+			})(window);
+		</script>
+	</head>
+	<body>
+		<!--
+        	作者：wss
+        	时间：2017-03-28
+        	描述：header
+        -->
+        <header>
+			<a href="javascript:history.back(-1);"><img src="../img/zuo.gif" /></a>
+			<h1>好友列表</h1>
+			<div class="san-input">
+				<input type="text"/>
+			</div>
+			<div class="san-tebie">
+				<img src="../img/guanzhu.gif" />
+				<h2>特别关注</h2>
+			</div>
+        </header>
+        <!--
+        	作者：wss
+        	时间：2017-03-28
+        	描述：com
+        -->
+        <ul class="san-com">
+        	<li>
+				<div class="lie-tu"><img src="../img/friend-1.gif"/></div>
+				<div class="lie-con">
+					<h3>琉璃<img src="../img/vip.gif" class="vip"/><img src="../img/reizheng.gif" class="reizhang"/><img src="../img/zai.gif" class="zai"/></h3>
+					<p>一个人走，一个人过，一个人生活...</p>
+				</div>
+			</li>
+			
+			<li>
+				<div class="lie-tu"><img src="../img/friend-5.gif"/></div>
+				<div class="lie-con">
+					<h3>雪<img src="../img/reizheng.gif" class="reizhang"/><img src="../img/zai.gif" class="zai"/></h3>
+					<p>相信缘份...就请相信我...</p>
+				</div>
+			</li>
+			
+			<li>
+				<div class="lie-tu"><img src="../img/friend-6.gif"/></div>
+				<div class="lie-con">
+					<h3>桃宝<img src="../img/vip.gif" class="vip"/><img src="../img/reizheng.gif" class="reizhang"/><img src="../img/lixian.gif" class="zai"/></h3>
+					<p>认真的对待，真诚的交朋友...</p>
+				</div>
+			</li>
+			
+			<li>
+				<div class="lie-tu"><img src="../img/friend-7.gif"/></div>
+				<div class="lie-con">
+					<h3>Ganner fant<img src="../img/reizheng.gif" class="reizhang"/><img src="../img/lixian.gif" class="zai"/></h3>
+					<p>高兴就好</p>
+				</div>
+			</li>
+			
+			<li>
+				<div class="lie-tu"><img src="../img/friend-8.gif"/></div>
+				<div class="lie-con">
+					<h3>果汁丶<img src="../img/vip.gif" class="vip"/><img src="../img/lixian.gif" class="zai"/></h3>
+					<p>找啊找啊找朋友</p>
+				</div>
+			</li>
+        </ul>
+	</body>
+</html>

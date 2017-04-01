@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/chat.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="../js/chat.js" ></script>
+		<script>
+			(function(win) {
+				var ratio, scaleValue, renderTime,
+					document = window.document,
+					docElem = document.documentElement,
+					vpm = document.querySelector('meta[name="viewport"]');
+				if(vpm) {
+					var tempArray = vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+					if(tempArray) {
+						scaleValue = parseFloat(tempArray[2]);
+						ratio = parseInt(1 / scaleValue);
+					}
+				} else {
+					vpm = document.createElement("meta");
+					vpm.setAttribute("name", "viewport");
+					vpm.setAttribute("content", "width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+					docElem.firstElementChild.appendChild(vpm);
+				}
+
+				win.addEventListener("resize", function() {
+					clearTimeout(renderTime);
+					renderTime = setTimeout(initPage, 300);
+				}, false);
+
+				win.addEventListener("pageshow", function(e) {
+					e.persisted && (clearTimeout(renderTime), renderTime = setTimeout(initPage, 300));
+				}, false);
+
+				"complete" === document.readyState ? document.body.style.fontSize = 12 * ratio + "px" :
+					document.addEventListener("DOMContentLoaded", function() {
+						document.body.style.fontSize = 12 * ratio + "px";
+					}, false);
+				initPage();
+
+				function initPage() {
+					var htmlWidth = docElem.getBoundingClientRect().width;
+					if(htmlWidth > 640) htmlWidth = 640;
+					htmlWidth / ratio > 640 && (htmlWidth = 640 * ratio);
+					win.rem = htmlWidth / 16;
+					docElem.style.fontSize = win.rem + "px";
+				}
+			})(window);
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="head-left"><a href="javascript:history.back(-1);"></a></div>
+			<h1>琉璃</h1>
+			<div class="head-right"></div>
+		</header>
+		<div class="san-con">
+			<div class="san-time">11:30</div>
+			<div class="news">
+				<img src="../img/friend-1.gif" class="tou" />
+				<p>没事的，不要那么纠结</p>
+			</div>
+			
+			<div class="news-right">
+				<div class="tou-1"></div>
+				<p>可是，我还是想不通</p>
+			</div>
+			
+			<div class="news-right">
+				<div class="tou-1"></div>
+				<p>呀( ⊙ o ⊙ )谢谢你琉璃姐</p>
+			</div>
+			
+			<div class="news">
+				<img src="../img/friend-1.gif" class="tou" />
+				<p>不开心就不要想那么多啦~我知道一家新开的餐厅，出来一起去试试吧</p>
+			</div>
+			
+		</div>
+		
+		
+		<footer>
+			<div class="foot-left">
+				
+			</div>
+			<div class="foot-con">
+				<input type="text" id="fa"/>
+			</div>
+			<div class="foot-right">
+				<input type="button" value="发送" id="btn" />
+			</div>
+		</footer>
+	</body>
+</html>

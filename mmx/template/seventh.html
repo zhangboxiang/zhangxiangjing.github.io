@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="../js/bx-js/style.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../css/bx-css/base.css" />
+	<link rel="stylesheet" href="../css/bx-css/seventh.css" />
+</head>
+<body>
+	<div class="bx_big">
+		<div class="bx_top">
+			<div class="bx_left">
+				<a href="third.html"><div class="fa fa-angle-left"></div></a>
+			</div>
+			<div class="bx_right">
+				<h3>谁看过我</h3>
+			</div>
+		</div>
+		<div class="bx_topp"></div>
+		<div class="bx_f">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>玻璃</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>22岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">东城</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">0.02km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>35分钟前</h3>
+			</div>
+		</div>
+		<div class="bx_s">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>月影</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>25岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">朝阳</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">1.02km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>1小时前</h3>
+			</div>
+		</div>
+		<div class="bx_t">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>飞雁惊鸿</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>19岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">西城</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">2.13km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>2小时前</h3>
+			</div>
+		</div>
+		<div class="bx_o">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>燕溪</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>26岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">海淀</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">3.25km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>3小时前</h3>
+			</div>
+		</div>
+		<div class="bx_v">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>月瑶</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>25岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">朝阳</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">1.02km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>3小时前</h3>
+			</div>
+		</div>
+		<div class="bx_e">
+			<div class="bx_zuo">
+				<div class="bx_tu"></div>
+			</div>
+			<div class="bx_zhong">
+				<div class="bx_bl"><span>空山鸟语</span><i class="bx_h"></i><i class="bx_r"></i></div>
+				<div class="bx_sui"><span>19岁</span><span style="text-indent: 0.8rem;">北京</span><span style="text-indent: 0.4rem;">西城</span><i class="bx_dw"></i><span style="text-indent:0.2rem;">2.13km</span></div>
+			</div>
+			<div class="bx_you">
+				<h3>4小时前</h3>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script>
+//侧滑显示删除按钮
+var expansion = null; //是否存在展开的list
+var container = document.querySelectorAll('.bx_big .bx_f');
+for(var i = 0; i < container.length; i++){    
+    var x, y, X, Y, swipeX, swipeY;
+    container[i].addEventListener('touchstart', function(event) {
+        x = event.changedTouches[0].pageX;
+        y = event.changedTouches[0].pageY;
+        swipeX = true;
+        swipeY = true ;
+        if(expansion){   //判断是否展开，如果展开则收起
+            expansion.className = "";
+        }        
+    });
+    container[i].addEventListener('touchmove', function(event){
+        
+        X = event.changedTouches[0].pageX;
+        Y = event.changedTouches[0].pageY;        
+        // 左右滑动
+        if(swipeX && Math.abs(X - x) - Math.abs(Y - y) > 0){
+            // 阻止事件冒泡
+            event.stopPropagation();
+            if(X - x > 10){   //右滑
+                event.preventDefault();
+                this.className = "";    //右滑收起
+            }
+            if(x - X > 10){   //左滑
+                event.preventDefault();
+                this.className = "swipeleft";   //左滑展开
+                expansion = this;
+            }
+            swipeY = false;
+        }
+        // 上下滑动
+        if(swipeY && Math.abs(X - x) - Math.abs(Y - y) < 0) {
+            swipeX = false;
+        }        
+    });
+}
+</script>
+</body>
+</html>

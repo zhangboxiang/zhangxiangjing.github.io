@@ -1,0 +1,37 @@
+.rl_head{
+	height:1.75rem;
+	text-align: center;
+	line-height: 1.75rem;
+	position: relative;
+	background: #fff;
+}
+.rl_fixed{
+	width: 100%;
+	height: 1.75rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.mtop{
+	margin-top: 1.75rem;
+}
+.rl_head p{
+	font-size: 0.8rem;
+	color: #3a3a3a;
+}
+.rl_fh img{
+	position: absolute;
+	width: 0.45rem;
+	height: 0.75rem;
+	left: 0.65rem;
+	top: 0.45rem;
+}
+.rl_tu{
+	width: 100%;
+	height: 5.6rem;
+	margin-bottom: 0.85rem;
+}
+.rl_tu img{
+	width: 100%;
+	height: 100%;
+}

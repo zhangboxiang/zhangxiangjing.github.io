@@ -1,0 +1,262 @@
+
+.dabox{
+	width:200%;
+	height: 100vh;
+}
+.box {
+  width: 50%;
+  height: 100%;
+  background: url(../img/meinv.jpg) no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  float:left;
+  transform: translateX(-100%);
+  transition:all 0.5s;
+}
+
+
+
+.box .cbox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden; position:relative ;
+}
+.box .cbox > header {
+  width: 100%;
+  height: 7rem;
+  position: relative;
+}
+.box .cbox > header > .right {
+  width: 4.7rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 1.9rem;
+  right: 0.65rem;
+}
+.box .cbox > header > .right p:nth-child(1) {
+  width: 100%;
+  height: 0.6rem;
+  text-align: center;
+  color: #fff;
+}
+.box .cbox > header > .right div:nth-child(2) {
+  width: 100%;
+  height: 1.05rem;
+  line-height: 1.05rem;
+  background: #ec5254;
+  color: #fff;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.box .cbox > header > .right p:nth-child(3) {
+  width: 100%;
+  height: 0.75rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.5rem;
+  padding-top: 0.3rem;
+}
+.box .cbox > section {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: #fff;
+}
+.box .cbox >  .title> a {
+	display: inline-block;
+  width: 100%;
+  height: 4.5rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: #fff;
+  display: flex;
+  border-bottom: 1px solid #efefef;
+}
+.box .cbox >  .title > a > .left {
+  width: 2.9rem;
+  height: 3.3rem;
+  padding-top: 1.2rem;
+}
+.box .cbox >  .title > a > .left > .img {
+  width: 2.3rem;
+  height: 2.3rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-left: 0.6rem;
+}
+.box .cbox > .title > a > .left > .img > img {
+  width: 2.3rem;
+}
+.box .cbox > .title> a > .right {
+  flex: 1;
+  height: 3.3rem;
+  padding-top: 1.2rem;
+  padding-left: 0.25rem;
+}
+.box .cbox > .title> a > .right > .top {
+  padding-top: 0.45rem;
+  width: 100%;
+  height: 0.9rem;
+}
+.box .cbox > .title> a > .right > .top > img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.box .cbox > .title> a > .right > .center {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+}
+.box .cbox > .title> a > .right > .center > img:nth-child(1) {
+  width: 0.45rem;
+  height: 0.55rem;
+}
+.box .cbox > .title> a > .right > .center > span:nth-child(2) {
+  color: #e45367;
+}
+.box .cbox > .title> a > .right > .center > img:nth-child(3) {
+  width: 0.7rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0;
+  right: 0.7rem;
+}
+.box .cbox >  .title> a > .right > .bottom {
+  width: 100%;
+  height: 0.6rem;
+}
+.box .cbox >  .title> a > .right > .bottom > img:nth-child(1) {
+  width: 0.7rem;
+  height: 0.55rem;
+}
+.box .cbox >  .title> a > .right > .bottom > img:nth-child(2) {
+  width: 0.7rem;
+  height: 0.55rem;
+}
+.box .cbox >  .title> a > .right > .bottom > img:nth-child(3) {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.box .cbox > section > .centerbox {
+  width: 100%;
+  height: 3.3rem;
+  background: #fff;
+  display: flex;
+  border-bottom: 1px solid #efefef;
+}
+.box .cbox > section > .centerbox > .left {
+  width: 2.9rem;
+  height: 3.3rem;
+}
+.box .cbox > section > .centerbox > .left > .img {
+  width: 2.3rem;
+  height: 2.3rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-left: 0.6rem;
+}
+.box .cbox > section > .centerbox > .left > .img > img {
+  width: 2.3rem;
+}
+.box .cbox > section > .centerbox > .right {
+  flex: 1;
+  height: 3.3rem;
+  padding-left: 0.25rem;
+}
+.box .cbox > section > .centerbox > .right > .top {
+  padding-top: 0.45rem;
+  width: 100%;
+  height: 0.9rem;
+}
+.box .cbox > section > .centerbox > .right > .top > img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.box .cbox > section > .centerbox > .right > .center {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+}
+.box .cbox > section > .centerbox > .right > .center > img:nth-child(1) {
+  width: 0.5rem;
+  height: 0.55rem;
+}
+.box .cbox > section > .centerbox > .right > .center > span:nth-child(2) {
+  color: #e45367;
+}
+.box .cbox > section > .centerbox > .right > .center > img:nth-child(3) {
+  width: 0.7rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0;
+  right: 0.7rem;
+}
+.box .cbox > section > .centerbox > .right > .bottom {
+  width: 100%;
+  height: 0.6rem;
+}
+.box .cbox > section > .centerbox > .right > .bottom > img:nth-child(1) {
+  width: 0.7rem;
+  height: 0.55rem;
+}
+.box .cbox > section > .centerbox > .right > .bottom > img:nth-child(2) {
+  width: 0.7rem;
+  height: 0.55rem;
+}
+.box .cbox > section > .centerbox > .right > .bottom > img:nth-child(3) {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.box .cbox > footer {
+  width: 100%;
+  height: 2rem;
+  border-top: 1px solid #efefef;
+  background: #fff;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+}
+.box .cbox > footer > .footerbox1 {
+  flex: 1;
+  background: url(../img/dhh.png) no-repeat center 0.2rem;
+  background-size: 0.75rem 1rem;
+  text-align: center;
+  padding-top: 1.35rem;
+  color: #ec5252;
+}
+.box .cbox > footer > .footerbox2 {
+  flex: 1;
+  background: url(../img/huih.png) no-repeat center 0.3rem;
+  background-size: 0.95rem 0.85rem;
+  text-align: center;
+  padding-top: 1.35rem;
+  color: #000;
+}
+.box .cbox > footer > .footerbox3 {
+  flex: 1;
+  background: url(../img/hgg.png) no-repeat center 0.3rem;
+  background-size: 0.95rem 0.8rem;
+  text-align: center;
+  padding-top: 1.35rem;
+  color: #000;
+}
+.box .cbox > footer > .footerbox4 {
+  flex: 1;
+  background: url(../img/tjb.png) no-repeat center 0.1rem;
+  background-size: 1rem 1.1rem;
+  text-align: center;
+  padding-top: 1.35rem;
+  color: #000;
+}
+.box .cbox > footer > .footerbox5 {
+  flex: 1;
+  background: url(../img/wdxxx.png) no-repeat center 0.3rem;
+  background-size: 0.95rem 0.85rem;
+  text-align: center;
+  padding-top: 1.35rem;
+  color: #000;
+}
+/*# sourceMappingURL=mmxapp7.css.map */

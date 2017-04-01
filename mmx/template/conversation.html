@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>conversation</title>
+		<link rel="stylesheet" href="../css/svg/font.css" />
+		<link rel="stylesheet" href="../css/conversation.css" />
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/conver.js"></script>
+		
+		<script>
+			(function(win) {
+				var ratio, scaleValue, renderTime,
+					document = window.document,
+					docElem = document.documentElement,
+					vpm = document.querySelector('meta[name="viewport"]');
+				if(vpm) {
+					var tempArray = vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+					if(tempArray) {
+						scaleValue = parseFloat(tempArray[2]);
+						ratio = parseInt(1 / scaleValue);
+					}
+				} else {
+					vpm = document.createElement("meta");
+					vpm.setAttribute("name", "viewport");
+					vpm.setAttribute("content", "width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+					docElem.firstElementChild.appendChild(vpm);
+				}
+
+				win.addEventListener("resize", function() {
+					clearTimeout(renderTime);
+					renderTime = setTimeout(initPage, 300);
+				}, false);
+
+				win.addEventListener("pageshow", function(e) {
+					e.persisted && (clearTimeout(renderTime), renderTime = setTimeout(initPage, 300));
+				}, false);
+
+				"complete" === document.readyState ? document.body.style.fontSize = 12 * ratio + "px" :
+					document.addEventListener("DOMContentLoaded", function() {
+						document.body.style.fontSize = 12 * ratio + "px";
+					}, false);
+				initPage();
+
+				function initPage() {
+					var htmlWidth = docElem.getBoundingClientRect().width;
+					if(htmlWidth > 640) htmlWidth = 640;
+					htmlWidth / ratio > 640 && (htmlWidth = 640 * ratio);
+					win.rem = htmlWidth / 16;
+					docElem.style.fontSize = win.rem + "px";
+				}
+			})(window);
+		</script>
+	</head>
+
+	<body>
+		<!--
+        	作者：wss
+        	时间：2017-03-28
+        	描述：header
+        -->
+		<header>
+			<div class="icon-menu"></div>
+			<h1>会话</h1>
+			<a href="friend.html"><div class="icon-users"></div></a>
+		</header>
+		<!--
+        	作者：wss
+        	时间：2017-03-28
+        	描述：com
+        -->
+		<div class="san-zon" id="san-zon">
+
+			<ul class="san-box">
+				<li>
+					<div><img src="../img/sheng.gif" /></div>
+					<h2>验证消息</h2>
+				</li>
+				<li>
+					<div><img src="../img/ren.gif" /></div>
+					<h2>陌生人</h2>
+					<span class="san-active">1</span>
+				</li>
+				<li>
+					<a href="rl_tz.html">
+					<div><img src="../img/li.gif" /></div>
+					<h2>收到礼物</h2>
+					<span class="san-active">5</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="san-lie" id="san-lie">
+				<li>
+					<div class="san-show">
+
+						<div class="lie-tu"><img src="../img/friend-1.gif" /></div>
+						<div class="lie-con">
+							<h3>琉璃<img src="../img/vip.gif" class="vip"/><img src="../img/zai.gif" class="zai"/></h3>
+							<p>没事的，不要那么纠结</p>
+						</div>
+						<div class="lie-ri">
+							<h3>11:30</h3>
+							<span class="san-active">5</span>
+						</div>
+
+					</div>
+					
+					<div class="san-how">
+						<div class="how-1">置顶</div>
+						<div class="how-2">删除</div>
+					</div>
+					
+				</li>
+
+				<li>
+					<div class="san-show">
+
+						<div class="lie-tu"><img src="../img/firend-2.gif" /></div>
+						<div class="lie-con">
+							<h3>月影<img src="../img/vip.gif" class="vip"/><img src="../img/lixian.gif" class="zai"/></h3>
+							<p>hello,能认识一下吗！</p>
+						</div>
+						<div class="lie-ri">
+							<h3>昨天</h3>
+							<span></span>
+						</div>
+					
+					</div>
+					<div class="san-how">
+						<div class="how-1">置顶</div>
+						<div class="how-2">删除</div>
+					</div>
+					
+				</li>
+
+				<li>
+					<div class="san-show">
+
+						<div class="lie-tu"><img src="../img/firend-3.gif" /></div>
+						<div class="lie-con">
+							<h3>熊与少女<img src="../img/zai.gif" class="zai"/></h3>
+							<p>你在哪啊？我去找你。</p>
+						</div>
+						<div class="lie-ri">
+							<h3>昨天</h3>
+							<span></span>
+						</div>
+
+					</div>
+					<div class="san-how">
+						<div class="how-1">置顶</div>
+						<div class="how-2">删除</div>
+					</div>
+					
+				</li>
+
+				<li>
+					<div class="san-show">
+						<div class="lie-tu"><img src="../img/firend-4.gif" /></div>
+						<div class="lie-con">
+							<h3>月瑶<img src="../img/vipli.gif" class="vip"/><img src="../img/lixian.gif" class="zai"/></h3>
+							<p>刚刚给你电话，怎么没接啊。</p>
+						</div>
+						<div class="lie-ri">
+							<h3>星期一</h3>
+							<span></span>
+						</div>
+
+					</div>
+					
+					
+					<div class="san-how">
+						<div class="how-1">置顶</div>
+						<div class="how-2">删除</div>
+					</div>
+					
+				</li>
+
+			</ul>
+
+		</div>
+
+		<!--
+        	作者：wss
+        	时间：2017-03-28
+        	描述：footer
+        -->
+		<ul class="footer">
+			<li>
+				<a href="lights.html">
+				<img src="../img/huo-1.gif" class="huo" />
+				<h2>灯火</h2>
+				</a>
+			</li>
+			<li>
+				<a href="conversation.html">
+				<img src="../img/hui-2.gif" class="hui" />
+				<h2 class="red">会话</h2>
+				</a>
+			</li>
+			<li>
+				<a href="cc-index-mo.html">
+				<img src="../img/shi-1.gif" class="shi" />
+				<h2>时尚</h2>
+				</a>
+			</li>
+			<li>
+				<a href="crl_ph.html">
+				<img src="../img/pai-1.gif" class="pai" />
+				<h2>排行</h2>
+				</a>
+			</li>
+			<li>
+				<a href="fourth.html">
+				<img src="../img/ren-1.gif" class="ren" />
+				<h2>我的</h2>
+				</a>
+			</li>
+		</ul>
+	</body>
+
+</html>

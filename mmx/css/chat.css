@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑";
+  text-decoration: none;
+  outline: none;
+  font-weight: normal;
+}
+header {
+  display: -webkit-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 15;
+  border-bottom: 1px solid #ededed;
+}
+header .head-left {
+  color: #ef6e6e;
+  font-weight: normal;
+  font-size: 0.85rem;
+  width: 0.4rem;
+  height: 0.8rem;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-left: 0.65rem;
+}
+header .head-left a {
+  display: block;
+  width: 0.4rem;
+  height: 0.8rem;
+  background: url("../img/zuo.gif") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+header h1 {
+  -webkit-box-flex: 5;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.7rem;
+  font-weight: normal;
+}
+header .head-right {
+  text-align: center;
+  color: #ef6e6e;
+  font-size: 0.75rem;
+  background: url("../img/add.gif") no-repeat;
+  background-size: 100% 100%;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: 0.3rem;
+  margin-right: 0.6rem;
+}
+
+a{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;}
+img{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+
+.san-add {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  position: fixed;
+  top: 1.75rem;
+  border-bottom: 1px solid #efefef;
+}
+.san-add h1 {
+  width: 49%;
+  float: left;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: #7c7c7c;
+  border: 1px solid #f4f4f4;
+  border-left: 0;
+}
+.san-add h2 {
+  width: 49%;
+  float: left;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: #7c7c7c;
+  border: 1px solid #f4f4f4;
+  border-right: 0;
+}
+.san-con {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 4.4rem;
+  margin-bottom: 2.1rem;
+}
+.san-con .san-time {
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.4rem;
+  color: #c5c5c5;
+  float: left;
+}
+.san-con .news {
+  width: 100%;
+  height: auto;
+  margin-top: 1.05rem;
+  overflow: hidden;
+}
+.san-con .news .tou {
+  width: 2.6rem;
+  height: 2.6rem;
+  float: left;
+  margin-left: 0.65rem;
+  background-size: 100% 100%;
+}
+.san-con .news p {
+  max-width: 10rem;
+  padding: 0 0.5rem;
+  height: auto;
+  line-height: 1rem;
+  background: #e5e5e5;
+  border-radius: 6px;
+  font-size: 0.55rem;
+  color: #868686;
+  float: left;
+  margin-top: 0.65rem;
+  margin-left: 0.5rem;
+}
+.san-con .news-right {
+  width: 100%;
+  height: auto;
+  margin-top: 1.05rem;
+  overflow: hidden;
+}
+.san-con .news-right .tou-1 {
+  width: 2.6rem;
+  height: 2.6rem;
+  float: right;
+  margin-left: 0.65rem;
+  background: url("../img/firend-3.gif") no-repeat;
+  background-size: 100% 100%;
+}
+.san-con .news-right p {
+  max-width: 10rem;
+  padding: 0 0.5rem;
+  height: auto;
+  line-height: 1rem;
+  background: #e5e5e5;
+  border-radius: 6px;
+  font-size: 0.55rem;
+  color: #868686;
+  float: right;
+  margin-top: 0.65rem;
+  margin-left: 0.5rem;
+}
+footer {
+  width: 100%;
+  height: 2.05rem;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ececec;
+  display: -webkit-box;
+  background: #fff;
+}
+footer .foot-left {
+  width: 0.95rem;
+  height: 0.95rem;
+  background: url("../img/xiao.gif") no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0.45rem;
+  margin-left: 0.6rem;
+}
+footer .foot-con {
+  -webkit-box-flex: 1;
+  position: relative;
+}
+footer .foot-con input {
+  display: block;
+  height: 0.9rem;
+  width: 90%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.1rem solid #f8c3b5;
+  margin: 0.5rem auto;
+}
+footer .foot-right {
+  width: 1.5rem;
+  height: 0.9rem;
+  background: url("../img/add-1.gif") no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0.5rem;
+  margin-right: 0.6rem;
+}
+footer .foot-right input {
+  width: 100%;
+  height: 100%;
+  line-height: 1rem;
+  border: 0;
+  background: #f8c3b5;
+  color: #fff;
+  font-size: 0.55rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=chat.css.map */

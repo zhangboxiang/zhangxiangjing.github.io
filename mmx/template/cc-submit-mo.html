@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 设置手机端全屏显示，不允许出现滚动条  -->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<meta name="format-detection" content="telphone=no, email=no" />	
+		<!--  引入图标文件  -->
+		<link rel="stylesheet" type="text/css" href="../css/svg/font.css"/>	
+		<!--   样式加载    -->
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/submit-mo.css"/>
+		<script src="../js/rem.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<div class="cc">
+			<header>
+				<div class="fl"><a href="javascript:history.back(-1);">&lsaquo;</a></div>
+				<p><span>夏季清新时尚闺蜜套装</span></p>
+			</header>
+			<div class="order" id="radio">
+				<div class="form">
+					<div class="img">
+						<img src="../img/cc-img/fashion_14.jpg" alt="" />
+					</div>
+					<div class="name">
+						库存501件<span class="fr">￥99.9</span>
+					</div>
+				</div>
+				<div class="radio">
+					<div class="title">
+						颜色
+					</div>
+					<div class="input">
+						<span><input type="radio" name="color" id="black" value="黑白条纹" /><label for="black">黑白条纹</label></span>
+						<span><input type="radio" name="color" id="cyan" value="藏青渐变" /><label for="cyan">藏青渐变</label></span>
+						<span><input type="radio" name="color" id="flower" value="碎花05" /><label for="flower">碎花05</label></span>
+						<span><input type="radio" name="color" id="white" value="黑白101" /><label for="white">黑白101</label></span>
+					</div>
+				</div>
+				<div class="radio">
+					<div class="title">
+						尺码
+					</div>
+<div class="input">
+	<span><input type="radio" name="size" id="S" value="160/80/S" /><label for="S">160/80/S</label></span>
+	<span><input type="radio" name="size" id="M" value="165/84A/M" /><label for="M">165/84A/M</label></span>
+	<span><input type="radio" name="size" id="L" value="170/88A/L" /><label for="L">170/88A/L</label></span>
+	<span><input type="radio" name="size" id="XL" value="175/92A/XL" /><label for="XL">175/92A/XL</label></span>
+	<span><input type="radio" name="size" id="XXL" value="180/96A/XXL" /><label for="XXL">180/96A/XXL</label></span>
+</div>
+				</div>
+				<!--<script>
+					window.onload = function(){
+						var oRa = document.getElementById('radio');
+						var oIn = oRa.getElementsByTagName('input');
+//						console.log(oIn.length);
+						for(var i=0;i<oIn.length;i++){
+							oIn[i].onclick = function(){
+								for(var j=0;j<oIn.length;j++){
+									oIn[j].style.background = 'white'
+								}
+								console.log(this.style.background)
+								this.style.background = 'black';
+							}
+						}
+					}
+				</script>-->
+				<div class="buy">
+					<div class="input">
+						<span>&minus;</span><span>1</span><span>＋</span>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<a href="cc-detail-mo.html">
+				确定
+				</a>
+			</footer>
+		</div>
+	</body>
+</html>

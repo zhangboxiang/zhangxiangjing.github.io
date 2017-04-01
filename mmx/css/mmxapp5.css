@@ -1,0 +1,155 @@
+.box {
+  width: 100%;
+  height: auto;
+}
+.box > header {
+  width: 100%;
+  height: 1.7rem;
+  position: relative;
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.box > header > a {
+  text-decoration: none;
+}
+.box > header > a > img {
+  width: 0.5rem;
+  height: 0.75rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.65rem;
+}
+.box section {
+  width: 100%;
+  height: auto;
+}
+.box section > .top {
+  width: 100%;
+  height: 5.5rem;
+  background: #fff;
+  display: flex;
+}
+.box section > .top > .left {
+  width: 40%;
+  height: 5.5rem;
+  flex: 1;
+}
+.box section > .top > .left > img {
+  width: 4.6rem;
+  height: 4.85rem;
+  margin-left: 0.65rem;
+  margin-top: 0.65rem;
+}
+.box section > .top > .right {
+  width: 60%;
+  height: 5.5rem;
+  flex: 2;
+}
+.box section > .top > .right > .rightbox {
+  width: 8.5rem;
+  height: 5.5rem;
+  margin-left: 1rem;
+}
+.box section > .top > .right > .rightbox .title {
+  width: 100%;
+  height: 2rem;
+  line-height: 2.3rem;
+  font-size: 0.7rem;
+}
+.box section > .top > .right > .rightbox > p:nth-child(2) {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.5rem;
+}
+.box section > .top > .right > .rightbox > p:nth-child(3) {
+  width: 100%;
+  height: 1.15rem;
+  font-size: 0.5rem;
+}
+.box section > .top > .right > .rightbox > p:nth-child(3) > span {
+  color: #ec5252;
+}
+.box section > .top > .right > .rightbox > .jis {
+  width: 7.9rem;
+  height: 1.2rem;
+  border: 1px solid #f8bcbc;
+  display: flex;
+}
+.box section > .top > .right > .rightbox > .jis .jia {
+  width: 30%;
+  height: 1.2rem;
+  color: #000;
+  font-size: 0.6rem;
+  text-align: center;
+  flex: 1;
+  border-right: 1px solid #f8bcbc;
+  line-height: 1.2rem;
+}
+.box section > .top > .right > .rightbox > .jis .sl {
+  width: 39%;
+  height: 1.2rem;
+  color: #f8bcbc;
+  font-size: 0.6rem;
+  text-align: center;
+  flex: 2;
+  line-height: 1.2rem;
+  border-right: 1px solid #f8bcbc;
+}
+.box section > .top > .right > .rightbox > .jis .jian {
+  width: 30%;
+  height: 1.2rem;
+  color: #000;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.2rem;
+  flex: 1;
+}
+.box footer {
+  width: 100%;
+  height: 4.7rem;
+  position: fixed;
+  bottom: 0;
+}
+.box footer > .top {
+  width: 100%;
+  height: 2.5rem;
+  text-align: right;
+}
+.box footer > .top > p {
+  padding-right: 0.65rem;
+  height: 1.15rem;
+  font-size: 0.6rem;
+}
+.box footer > .top > p > span {
+  color: #ec5252;
+}
+.box footer > .bottom {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+}
+.box footer > .bottom > .left {
+  height: 2.2rem;
+  flex: 1;
+  background: #f8f7f7;
+  line-height: 2.2rem;
+  color: #ed6565;
+  font-size: 0.6rem;
+}
+.box footer > .bottom > .left > img {
+  width: 0.8rem;
+  height: 0.7rem;
+  margin-left: 1.1rem;
+}
+.box footer > .bottom > .right {
+  height: 2.2rem;
+  width: 3.9rem;
+  background: #ec5252;
+  text-align: center;
+  line-height: 2.2rem;
+  color: #fff;
+  font-size: 0.6rem;
+}
+/*# sourceMappingURL=mmxapp5.css.map */

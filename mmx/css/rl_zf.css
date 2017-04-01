@@ -1,0 +1,104 @@
+.rl_head{
+	width: 100%;
+	height:1.75rem;
+	text-align: center;
+	background: #fff;
+	line-height: 1.75rem;
+	display: -webkit-box;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.head_lf{
+	width: 1.05rem;
+	height: 100%;
+}
+.head_lf img{
+	float: right;
+	width: 0.45rem;
+	height: 0.75rem;
+	margin-top: 0.45rem;
+}
+.head_ct{
+	-webkit-box-flex: 1;
+	text-align: center;
+	line-height: 1.75rem;
+}
+.head_ct p{
+	font-size: 0.8rem;
+	color: #3a3a3a;
+}
+.head_rg{
+	width: 1.5rem;
+}
+.head_rg img{
+	float: left;
+	width: 0.85rem;
+	margin-top: 0.7rem;
+}
+.rl_ddje{
+	margin-top: 1.75rem;
+	width: 100%;
+	height: 2.3rem;
+	background: #fff;
+	display: -webkit-box;
+	border-top:0.05rem solid #f0f0f0;
+	border-bottom: 0.65rem solid #f0f0f0;
+}
+.ddje_lf{
+	-webkit-box-flex: 1;
+}
+.ddje_lf p{
+	font-size: 0.6rem;
+	color: #3a3a3a;
+	line-height: 2.3rem;
+	text-indent: 0.7rem;
+}
+.ddje_rg{
+	width: 2.75rem;
+}
+.ddje_rg span{
+	font-size: 0.6rem;
+	color: #ee6c6c;
+	line-height: 2.3rem;
+}
+.rl_way{
+	width: 100%;
+	height: 1.95rem;
+	line-height: 1.95rem;
+	text-indent: 0.7rem;
+	color: #adadad;
+	font-size: 00.65rem;
+	border-bottom:0.05rem solid #f0f0f0;
+}
+.waylist{
+	width: 100%;
+	height: 2.15rem;
+	line-height: 2.15rem;
+	display: -webkit-box;
+	border-bottom:0.05rem solid #f0f0f0;
+}
+.waylf{
+	-webkit-box-flex: 1;
+}
+.waylf p{
+	line-height: 2.15rem;
+}
+.waylf p img{
+	/*float: left;*/
+	width: 1.1rem;
+	margin-left: 1rem;
+}
+.waylf p span{
+	font-size: 0.6rem;
+	color: #6f6f6f;
+	margin-left: 0.3rem;
+}
+.wayrg{
+	width: 0.9rem;
+}
+.wayrg img{
+	float: left;
+	width: 0.3rem;
+	margin-top: 0.85rem;
+}

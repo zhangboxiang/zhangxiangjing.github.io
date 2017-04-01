@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/search.css" />
+		<script src="../js/search.js"></script>
+		<script>
+			(function(win) {
+				var ratio, scaleValue, renderTime,
+					document = window.document,
+					docElem = document.documentElement,
+					vpm = document.querySelector('meta[name="viewport"]');
+				if(vpm) {
+					var tempArray = vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+					if(tempArray) {
+						scaleValue = parseFloat(tempArray[2]);
+						ratio = parseInt(1 / scaleValue);
+					}
+				} else {
+					vpm = document.createElement("meta");
+					vpm.setAttribute("name", "viewport");
+					vpm.setAttribute("content", "width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+					docElem.firstElementChild.appendChild(vpm);
+				}
+
+				win.addEventListener("resize", function() {
+					clearTimeout(renderTime);
+					renderTime = setTimeout(initPage, 300);
+				}, false);
+
+				win.addEventListener("pageshow", function(e) {
+					e.persisted && (clearTimeout(renderTime), renderTime = setTimeout(initPage, 300));
+				}, false);
+
+				"complete" === document.readyState ? document.body.style.fontSize = 12 * ratio + "px" :
+					document.addEventListener("DOMContentLoaded", function() {
+						document.body.style.fontSize = 12 * ratio + "px";
+					}, false);
+				initPage();
+
+				function initPage() {
+					var htmlWidth = docElem.getBoundingClientRect().width;
+					if(htmlWidth > 640) htmlWidth = 640;
+					htmlWidth / ratio > 640 && (htmlWidth = 640 * ratio);
+					win.rem = htmlWidth / 16;
+					docElem.style.fontSize = win.rem + "px";
+				}
+			})(window);
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<div class="hed-left"></div>
+				<a href="javascript:history.back(-1);"><div class="hed-ri"></div></a>
+			</div>
+			<div class="banner">
+				<h1>Search</h1><span>搜索</span>
+			</div>
+			<div class="san-inputs">
+				<input type="text" placeholder="输入用户名 / 商品名 / 手机号" />
+				<div class="bu" id="bu"></div>
+				<div class="bu2" id="bu2"></div>
+			</div>
+		</header>
+		<ul class="san-com">
+			<li>
+				<img src="../img/user.gif" />
+				<h2>用户</h2>
+			</li>
+			<li>
+				<img src="../img/shop.gif" />
+				<h2>商品</h2>
+			</li>
+			<li>
+				<img src="../img/dian.gif" />
+				<h2>店铺</h2>
+			</li>
+		</ul>
+		<ul class="san-foot">
+			<li>
+				<img src="../img/sou-bao.gif" />
+				<h2>琉璃</h2>
+			</li>
+			<li>
+				<img src="../img/sou-bao.gif" />
+				<h2>达芙妮</h2>
+			</li>
+			<a>清空输入记录</a>
+		</ul>
+	</body>
+</html>

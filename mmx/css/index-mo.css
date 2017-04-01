@@ -1,0 +1,251 @@
+.cc {
+  width: 100%;
+  overflow: hidden;
+}
+.cc header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: 0.75rem;
+  color: #505055;
+  text-align: center;
+}
+.cc header .menu {
+  padding: 0.45rem 0 0 0.5rem;
+  color: #ee6161;
+}
+.cc header .search {
+  padding: 0.5rem 0.65rem 0 0;
+  color: #ee6161;
+}
+.cc .banner {
+  margin: 1.7rem 0 0 0;
+  width: 100%;
+  height: 8.6rem;
+  padding-top: 1px;
+}
+.cc .banner .banner-cont {
+  width: 100%;
+  height: 8.5rem;
+  box-shadow: 0 0 1px 1px #fbf9fa;
+  position: relative;
+  overflow: hidden;
+}
+.cc .banner .banner-cont > ul {
+  width: 500%;
+  height: 8.5rem;
+}
+.cc .banner .banner-cont > ul > li {
+  width: 20%;
+  height: 8.5rem;
+  float: left;
+}
+.cc .banner .banner-cont > ul > li img {
+  width: 100%;
+  height: 100%;
+}
+.cc .banner .banner-cont > ol {
+  width: 5rem;
+  height: 0.9rem;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin: 0 0 0 -2.5rem;
+}
+.cc .banner .banner-cont > ol li {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: white;
+  border-radius: 50%;
+  float: left;
+  margin: 0.15rem 0 0 0.5rem;
+}
+.cc .banner .banner-cont > ol .active {
+  background: #fdfdfd;
+}
+.cc .fashion {
+  width: 100%;
+  overflow: hidden;
+}
+.cc .fashion .title {
+  width: 15.5rem;
+  height: 1.95rem;
+  margin: 0 auto;
+  line-height: 1.95rem;
+}
+.cc .fashion .title p {
+  text-align: center;
+  position: relative;
+}
+.cc .fashion .title p:before {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: block;
+  content: "";
+  width: 6rem;
+  height: 0.05rem;
+  background: #f6f6f6;
+}
+.cc .fashion .title p:after {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: block;
+  content: "";
+  width: 6rem;
+  height: 0.05rem;
+  background: #f6f6f6;
+}
+.cc .fashion .classify {
+  width: 15.25rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.cc .fashion .classify .cloth {
+  width: 15.25rem;
+  height: 5.3rem;
+  margin: 0 auto 0.4rem;
+  text-align: center;
+  position: relative;
+  background: url(../img/cc-img/fashion_01.jpg) no-repeat 50% 100%;
+  background-size: cover;
+}
+.cc .fashion .classify .cloth .text {
+  width: 2.95rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  color: white;
+  position: absolute;
+  background: url(../img/cc-img/fashion_1.png) no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  margin: -0.7rem 0 0 -1.475rem;
+}
+.cc .fashion .classify > div:nth-child(2) {
+  background: url(../img/cc-img/fashion_02.jpg) no-repeat 50% 100%;
+  background-size: cover;
+}
+.cc .fashion .classify > div:nth-child(3) {
+  background: url(../img/cc-img/fashion_03.jpg) no-repeat 50% 100%;
+  background-size: cover;
+}
+.cc .cont {
+  width: 100%;
+  overflow: hidden;
+  background: #ededed;
+}
+.cc .cont .yi {
+  width: 100%;
+  height: 12.8rem;
+  background: white;
+}
+.cc .cont .yi .title {
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  border-bottom: 0.05rem solid #f8f8f8;
+}
+.cc .cont .yi .title .fl {
+  font-size: 0.65rem;
+  color: #656565;
+}
+.cc .cont .yi .title .fl b {
+  width: 1rem;
+  height: 0.9rem;
+  display: inline-block;
+  padding: 0 0.4rem 0 0.4rem;
+}
+.cc .cont .yi .title .fl b img {
+  width: 100%;
+}
+.cc .cont .yi .title .fr {
+  margin-right: 0.45rem;
+  color: #b7b7bc;
+  font-size: 0.6rem;
+}
+.cc .cont .yi .show {
+  width: 15.15rem;
+  height: 11.05rem;
+  margin: 0.5rem auto 0;
+}
+.cc .cont .yi .show:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.cc .cont .yi .show > div {
+  width: 7.4rem;
+  height: 10.55rem;
+}
+.cc .cont .yi .show > div .img {
+  width: 7.4rem;
+  height: 7.7rem;
+  overflow: hidden;
+}
+.cc .cont .yi .show > div p {
+  padding-top: 0.9rem;
+  text-align: center;
+  color: #747474;
+}
+.cc .cont .yi .show .left .img img {
+  margin: -1.5rem 0 0 0;
+  width: 100%;
+}
+.cc .cont .yi .show .right .img img {
+  height: 100%;
+  margin: 0 0 0 -4rem;
+}
+.cc .cont .xie {
+  margin-top: 0.6rem;
+}
+.cc .cont .xie .show .left img {
+  width: 100%;
+  margin: 0 -1.5rem 0 0;
+}
+.cc .cont .xie .show .right .img img {
+  width: 100%;
+  height: auto;
+  margin: -0.8rem 0 0 0;
+}
+footer {
+  width: 100%;
+  height: 1.75rem;
+  padding-top: 0.15rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  flex: 1;
+}
+footer ul li a {
+  font-size: 0.6rem;
+  color: #848484;
+  overflow: hidden;
+}
+footer ul li a b {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+footer ul li a b img {
+  height: 100%;
+}
+footer ul li a p {
+  padding-top: .15rem;
+}
+/*# sourceMappingURL=index-mo.css.map */

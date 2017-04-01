@@ -1,0 +1,163 @@
+.cc {
+  width: 100%;
+  overflow: hidden;
+}
+.cc header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: 0.75rem;
+  color: #505055;
+  text-align: center;
+  border-bottom: 0.1rem solid #ededed;
+}
+.cc header .fl {
+  font-size: 1.2rem;
+  color: #ee6161;
+  margin-left: 0.65rem;
+  margin-top: -0.15rem;
+}
+.cc header .fl a{
+ color: #ee6161;
+}
+.cc header .fr {
+  font-size: 1.2rem;
+  color: #ee6161;
+  margin-right: 0.65rem;
+  margin-top: -0.4rem;
+}
+.cc .order {
+  width: 100%;
+  overflow: hidden;
+  margin: 1.7rem 0 2rem 0;
+  text-align: center;
+}
+.cc .order .pink {
+  color: #f08484;
+}
+.cc .order .font {
+  color: #444;
+  font-size: 0.5rem;
+}
+.cc .order .gray {
+  color: #b8b8b8;
+}
+.cc .order .form {
+  width: 12rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.cc .order .form div {
+  line-height: 1rem;
+  font-size: 0.5rem;
+}
+.cc .order .form div span {
+  font-size: 0.5rem;
+}
+.cc .order .form .img {
+  width: 12rem;
+  height: 11.05rem;
+  border: 0.1rem solid #ededed;
+  margin-top: 0.5rem;
+}
+.cc .order .form .img .image {
+  width: 3.9rem;
+  height: 4.2rem;
+  margin: 0.5rem auto 0;
+}
+.cc .order .form .img .image img {
+  height: 100%;
+  margin-left: -0.5rem;
+}
+.cc .order .form .img > div:nth-child(3) span {
+  padding-left: 0.4rem;
+}
+.cc .order .buy {
+  width: 12rem;
+  height: 4.2rem;
+  margin: 0 auto;
+}
+.cc .order .buy .font {
+  padding: 0.95rem 0 0.65rem 0;
+}
+.cc .order .buy .input span {
+  width: 3.15rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #7e7e7e;
+  display: inline-block;
+  border: 0.05rem solid #f9c5c5;
+  cursor: pointer;
+}
+.cc .order .buy .input span:nth-child(2) {
+  color: #ff7f9d;
+}
+.cc .order .address {
+  width: 10.6rem;
+  height: 4.6rem;
+  margin: 0 auto;
+  border-top: 0.1rem solid #ededed;
+  border-bottom: 0.1rem solid #ededed;
+}
+.cc .order .address b {
+  width: 0.85rem;
+  height: 1.1rem;
+  display: inline-block;
+  padding-top: 0.45rem;
+  padding-bottom: 0.2rem;
+}
+.cc .order .address b img {
+  width: 100%;
+}
+.cc .order .address .gray {
+  padding: 0.55rem 0 0.4rem 0;
+}
+.cc .order .add {
+  height: 2.9rem;
+}
+.cc .order .add div:first-child {
+  padding: 0.55rem 0 0.5rem 0;
+}
+.cc footer {
+  width: 100%;
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  border-top: 0.1rem solid #ededed;
+  line-height: 2rem;
+}
+.cc footer p {
+  width: 100%;
+  height: 100%;
+  font-size: 0.6rem;
+  text-indent: 1.45rem;
+}
+.cc footer p i {
+  color: #f08484;
+}
+.cc footer button{
+  width: 4.9rem;
+  height: 2.1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.75rem;
+  border: 0;
+  outline: none;
+  background: #ec5252;
+  color: white;
+}
+
+.cc footer button a{
+	  color: white;
+}
+
+/*# sourceMappingURL=affirm-mo.css.map */

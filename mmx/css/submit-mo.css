@@ -1,0 +1,130 @@
+.cc {
+  width: 100%;
+  overflow: hidden;
+}
+.cc header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: 0.75rem;
+  color: #505055;
+  text-align: center;
+  border-bottom: 0.1rem solid #ededed;
+}
+.cc header .fl {
+  font-size: 1.2rem;
+  color: #ee6161;
+  margin-left: 0.65rem;
+  margin-top: -0.15rem;
+  position: absolute;
+}
+
+.cc header .fl a{
+  color: #ee6161;
+}
+
+.cc header p {
+  text-align: center;
+}
+.cc header p span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 7rem;
+  display: inline-block;
+}
+.cc .order {
+  width: 100%;
+  overflow: hidden;
+  margin: 1.7rem 0 2.05rem 0;
+}
+.cc .order .form {
+  width: 12rem;
+  height: 12.85rem;
+  margin: 0.6rem auto;
+  position: relative;
+}
+.cc .order .form .img {
+  width: 12rem;
+  height: 12.85rem;
+  overflow: hidden;
+}
+.cc .order .form .img img {
+  height: 100%;
+  margin-left: -0.5rem;
+}
+.cc .order .form .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-indent: 0.7rem;
+}
+.cc .order .form .name span {
+  margin-right: 0.75rem;
+  color: #c44e4f;
+}
+.cc .order .radio {
+  width: 10.6rem;
+  height: 3.15rem;
+  margin: 0 auto;
+  border-bottom: 0.05rem solid #f7f7f7;
+  font-size: 0.6rem;
+}
+.cc .order .radio .title {
+  height: 1.15rem;
+  line-height: 1.15rem;
+}
+.cc .order .radio .input {
+  line-height: 0.9rem;
+  font-size: 0.5rem;
+}
+.cc .order .radio .input span {
+  display: inline-block;
+}
+.cc .order .buy {
+  width: 12rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+.cc .order .buy .input {
+  margin-top: 1rem;
+  text-align: center;
+}
+.cc .order .buy .input span {
+  width: 3.15rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #7e7e7e;
+  display: inline-block;
+  border: 0.05rem solid #f9c5c5;
+  cursor: pointer;
+}
+.cc .order .buy .input span:nth-child(2) {
+  color: #ff7f9d;
+}
+.cc footer a{
+	display: inline-block;
+  width: 100%;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  text-align: center;
+  background: #ec5252;
+  color: white;
+  font-size: 0.75rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=submit-mo.css.map */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/mmxapp5.css"/>
+	</head>
+	<body>
+		<div class="box">
+			
+			<header>
+				<a href="javascript:history.back(-1);"><img src="../img/lf.png" alt="" /></a>
+				赠送礼物
+			</header>
+			<section>
+				<div class="top">
+			<div class="left">
+			<img src="../img/xfh.jpg"/>
+			</div>
+			<div class="right">
+			<div class="rightbox">
+			<div class="title">粉玫瑰</div>
+			<p>花开四季香，人美愁断肠</p>
+			<p>心动+<span>10</span>，魅力+<span>10</span></p>
+			<div class="jis">
+				<div class="jia">-</div>
+				<div class="sl">1</div>
+				<div class="jian">+</div>
+				
+				
+			</div>
+			</div>
+			</div>	
+				</div>
+				
+				
+				
+			</section>
+			
+			<footer>
+			<div class="top">
+			<p>优惠:<span>无</span></p>
+			<p>总计: <span>10</span>银豆</p>
+			</div>
+			<div class="bottom">
+			<div class="left">
+			<img src="../img/xdd1.png" alt="" />
+			2000-10=1990
+			</div>
+			<div class="right">
+			赠送
+			</div>
+			
+			</div>
+			
+			
+			
+			</footer>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

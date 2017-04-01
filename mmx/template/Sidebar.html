@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+			<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/mmxapp6.css"/>
+		
+		
+	</head>
+	<body>
+		<div class="zbox">
+			<header>
+		<div class="top">
+			<a href="javascript:;"><img src="../img/xxx.png" alt="" /></a>
+		</div>	
+			<div class="bottom">
+				<div class="left">
+					<a href="javascript:;">
+					<div class="img">
+						<img src="../img/2015102008501073397.jpg" alt="" />
+					</div>
+					</a>
+				</div>
+				<div class="right">
+					<div class="top">四十只猫 &nbsp;&nbsp;<img src="../img/vip.png"/></div>
+					<div class="bottom">
+						数据的竞争，才是真正世界未来的竞争...
+					</div>
+					
+					
+				</div>
+				
+				
+			</div>
+			
+			
+			</header>
+			<section>
+			<div class="center">
+			 <div class="xxbox">
+			 	<a href="javacript:;"><img src="../img/yh.png" alt="" />
+			 	我的会员</a>
+			 </div>
+			<div class="xxbox">
+				<a href="javacript:;"><img src="../img/btp.png" alt="" />
+			 	我的相册</a>
+			 	
+			 </div>
+			 <div class="xxbox">
+			<a href="javacript:;"><img src="../img/qb.png" alt="" />
+			 	钱包管理</a>
+			 </div>
+			 <div class="xxbox">
+			<a href="javacript:;"> 	<img src="../img/gx.png" alt="" />
+			 	个性装扮</a>
+			 </div>
+			 <div class="xxbox">
+			<a href="javacript:;"> 	<img src="../img/gr.png" alt="" />
+			 	我的收藏</a>
+			 </div>
+			 <div class="xxbox">
+			 <a href="javacript:;">	<img src="../img/dd.png" alt="" />
+			 	清单管理</a>
+			 </div>
+			 <div class="xxbox">
+			<a href="javacript:;"> 	<img src="../img/aq.png" alt="" />
+			 	账号安全</a>
+			 </div>
+			
+			
+			
+			</div>
+			
+			</section>
+			
+			
+			<footer>
+				<div class="left">
+				<img src="../img/sz.png" alt="" />
+				<a href="javascript:;">设置</a>
+				</div>
+				
+				<div class="right">
+				<img src="../img/qh.png" alt="" />
+				<a href="javascript:;">切换</a>
+				</div>
+				
+				
+			</footer>
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		
+	<script type="text/javascript">
+		(function(win){
+		var ratio,scaleValue,renderTime,
+				document=window.document,
+				docElem=document.documentElement,
+				vpm=document.querySelector('meta[name="viewport"]');
+		if(vpm){
+			var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+			if(tempArray){
+				scaleValue=parseFloat(tempArray[2]);
+				ratio=parseInt(1/scaleValue);
+			}
+		}else{
+			vpm=document.createElement("meta");
+			vpm.setAttribute("name","viewport");
+			vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+			docElem.firstElementChild.appendChild(vpm);
+		}
+
+		win.addEventListener("resize",function(){
+			clearTimeout(renderTime);
+			renderTime=setTimeout(initPage,300);
+		},false);
+
+		win.addEventListener("pageshow", function(e) {
+			e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+		}, false);
+
+		"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+				document.addEventListener("DOMContentLoaded",function(){
+					document.body.style.fontSize =12*ratio+"px";
+				},false);
+		initPage();
+		function initPage(){
+			var htmlWidth=docElem.getBoundingClientRect().width;
+			if(htmlWidth>640) htmlWidth=640;
+			htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+			win.rem=htmlWidth/16;
+			docElem.style.fontSize=win.rem+"px";
+		}
+	})(window);
+		</script>			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

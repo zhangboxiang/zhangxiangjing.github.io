@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑";
+  text-decoration: none;
+  outline: none;
+}
+header {
+  display: -webkit-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #e3e3e3;
+  background: #fff;
+  z-index: 15;
+}
+header .icon-menu {
+  color: #ef6e6e;
+  font-weight: normal;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  -webkit-box-flex: 1;
+}
+header h1 {
+  -webkit-box-flex: 5;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.7rem;
+  font-weight: normal;
+}
+header > a{
+	display: block;
+	-webkit-box-flex: 1;
+	 margin-top: 0.45rem;
+}
+header .icon-users {
+  text-align: center;
+  color: #ef6e6e;
+  font-size: 0.75rem;
+}
+
+
+a{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;}
+img{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+
+.swipeleft {
+  transform: translateX(-31%);
+  -webkit-transform: translateX(-31%);
+}
+.san-zon {
+  overflow: hidden;
+  margin-top: 1.7rem;
+}
+.san-zon .san-box {
+  width: 100%;
+  height: auto;
+}
+.san-zon .san-box li {
+  width: 100%;
+  font-size: 0.65rem;
+  border-bottom: 1px solid #f6f6f6;
+  display: inline-flex;
+  position: relative;
+}
+.san-zon .san-box li h2 {
+  -webkit-box-flex: 1;
+  font-weight: normal;
+  font-size: 0.65rem;
+  height: 2.45rem;
+  line-height: 2.45rem;
+  color: #34343c;
+  text-indent: 1.2rem;
+}
+.san-zon .san-box li>a{
+	width: 100%;
+  font-size: 0.65rem;
+  border-bottom: 1px solid #f6f6f6;
+  display: inline-flex;
+  position: relative;
+}
+.san-zon .san-box li div {
+  width: 1.4rem;
+  height: 1.45rem;
+  margin: 0.5rem 0rem 0rem 1.3rem;
+}
+.san-zon .san-box li div img {
+  width: 100%;
+  height: 100%;
+}
+.san-zon .san-box li .san-active {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #e60012;
+  color: #f9dcdc;
+  position: absolute;
+  right: 0.7rem;
+  top: 0.9rem;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 0.4rem;
+  line-height: 1rem;
+}
+.san-zon .san-lie {
+  width: 100%;
+  height: auto;
+  padding-bottom: 3.6rem;
+  overflow: hidden;
+}
+.san-zon .san-lie li {
+  width: 145%;
+  height: 3.6rem;
+  border-bottom: 1px solid #f6f6f6;
+  float: left;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.san-zon .san-lie li li:after {
+  content: "";
+  clear: both;
+  overflow: hidden;
+}
+.san-zon .san-lie li .san-show {
+  width: 69%;
+  overflow: hidden;
+  float: left;
+}
+.san-zon .san-lie li .san-show .bian {
+  width: 8rem;
+  height: 3.7rem;
+  float: right;
+  background: #F9DCDC;
+}
+.san-zon .san-lie li .san-show .bian .zhiding {
+  float: left;
+  width: 4rem;
+  height: 3.7rem;
+  background: #000000;
+}
+.san-zon .san-lie li .san-show .bian .remove {
+  float: left;
+  width: 4rem;
+  height: 3.7rem;
+  background: red;
+}
+.san-zon .san-lie li .san-show .lie-tu {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.6rem 0rem 0rem 0.85rem;
+  float: left;
+}
+.san-zon .san-lie li .san-show .lie-tu img {
+  width: 100%;
+  height: 100%;
+}
+.san-zon .san-lie li .san-show .lie-con {
+  height: 100%;
+  float: left;
+  widows: 10rem;
+  font-size: 0.65rem;
+}
+.san-zon .san-lie li .san-show .lie-con h3 {
+  margin-top: 0.8rem;
+  font-weight: normal;
+  text-indent: 0.65rem;
+}
+.san-zon .san-lie li .san-show .lie-con h3 .vip {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.5rem;
+  margin: 0rem 0rem 0rem 0.2rem;
+}
+.san-zon .san-lie li .san-show .lie-con h3 .zai {
+  width: 1.1rem;
+  height: 0.55rem;
+  margin-left: 0.2rem;
+}
+.san-zon .san-lie li .san-show .lie-con p {
+  text-indent: 0.65rem;
+  margin-top: 0.3rem;
+  color: #b5b5b5;
+  font-family: 0.55rem;
+}
+.san-zon .san-lie li .san-show .lie-ri {
+  float: right;
+  width: 2.8rem;
+  height: 100%;
+  position: relative;
+}
+.san-zon .san-lie li .san-show .lie-ri h3 {
+  margin-top: 0.85rem;
+  font-size: 0.5rem;
+  font-weight: normal;
+  color: #c5c5c6;
+  text-align: center;
+}
+.san-zon .san-lie li .san-show .lie-ri .san-active {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #e60012;
+  color: #f9dcdc;
+  position: absolute;
+  right: 0.7rem;
+  top: 1.95rem;
+  font-size: 0.4rem;
+  line-height: 1rem;
+  text-align: center;
+  border-radius: 100%;
+}
+.san-zon .san-lie li .san-how {
+  width: 31%;
+  height: 3.7rem;
+  float: left;
+}
+.san-zon .san-lie li .san-how .how-1 {
+  width: 50%;
+  background: #d9d9d9;
+  color: #f2f2f2;
+  line-height: 3.7rem;
+  text-align: center;
+  float: left;
+  font-size: 0.65rem;
+}
+.san-zon .san-lie li .san-how .how-2 {
+  width: 50%;
+  background: #ec5252;
+  color: #f2f2f2;
+  line-height: 3.7rem;
+  text-align: center;
+  float: left;
+  font-size: 0.65rem;
+}
+.footer {
+  width: 100%;
+  height: 2.05rem;
+  padding: 0.05rem;
+  border-top: 0.1rem solid #e5e5e5;
+  display: -webkit-box;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+.footer li {
+  -webkit-box-flex: 1;
+  background: #fff;
+  height: 100%;
+  text-align: center;
+}
+.footer li .huo {
+  width: 0.75rem;
+  height: 1.05rem;
+  margin-top: 0.25rem;
+}
+.footer li .hui {
+  width: 0.95rem;
+  height: 0.9rem;
+  margin-top: 0.3rem;
+}
+.footer li .shi {
+  width: 0.95rem;
+  height: 0.9rem;
+  margin-top: 0.3rem;
+}
+.footer li .pai {
+  width: 1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem;
+}
+.footer li .ren {
+  width: 0.95rem;
+  height: 0.9rem;
+  margin-top: 0.3rem;
+}
+.footer li h2 {
+	color:#666;
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+
+.footer li h2.red {
+	color:#ee6161;
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+/*# sourceMappingURL=conversation.css.map */
